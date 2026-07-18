@@ -1,29 +1,23 @@
 package com.goat.portfolio;
 
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 @RequiredArgsConstructor
 public class ContactController {
-    private final JdbcTemplate jdbcTemplate;
-
-
-    private final JavaMailSender mailSender;
 
     private static final Logger log = LoggerFactory.getLogger(ContactController.class);
 
+    // We only need the MailSender now!
+    private final JavaMailSender mailSender;
 
     @GetMapping("/")
     public String indexPage() {
@@ -31,31 +25,24 @@ public class ContactController {
     }
 
     @PostMapping("/submit-form")
-    public String submitForm(@ModelAttribute Contact contact) {
-        log.info("Form submitted from method");
-        log.info(contact.toString());
+    public String submitForm(@RequestParam String name, @RequestParam String email, @RequestParam String message) {
+        log.info("Processing form submission from: {}", name);
 
-        // 1. Save to Database using plain SQL
-        String sql = "INSERT INTO contact_messages (name, email, message) VALUES (?, ?, ?)";
-        jdbcTemplate.update(sql, contact.getName(), contact.getEmail(), contact.getMessage());
+        try {
+            SimpleMailMessage mailMessage = new SimpleMailMessage();
+            mailMessage.setTo("sebhatahsin22@gmail.com"); // Sending it to yourself
+            mailMessage.setReplyTo(email); // So you can hit "Reply" and email them back
+            mailMessage.setSubject("New Portfolio Message from: " + name);
+            mailMessage.setText("Name: " + name + "\nEmail: " + email + "\n\nMessage:\n" + message);
 
-        // 2. Send the Email
-        sendEmailNotification(contact);
+            mailSender.send(mailMessage);
+            log.info("Email successfully sent!");
 
-        // 3. Redirect back to home
+        } catch (Exception e) {
+            log.error("Failed to send email: ", e);
+        }
+
+        // Redirect back to the page so they don't get stuck on a blank screen
         return "redirect:/";
-    }
-
-    private void sendEmailNotification(Contact contact) {
-        SimpleMailMessage mailMessage = new SimpleMailMessage();
-        mailMessage.setTo("sebhatahsin22@gmail.com");
-        mailMessage.setSubject("New Portfolio Message from " + contact.getName());
-        mailMessage.setText(
-                "You received a new message!\n\n" +
-                        "Name: " + contact.getName() + "\n" +
-                        "Email: " + contact.getEmail() + "\n\n" +
-                        "Message:\n" + contact.getMessage()
-        );
-        mailSender.send(mailMessage);
     }
 }
