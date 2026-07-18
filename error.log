@@ -664,3 +664,218 @@ jakarta.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not 
 2026-07-18T23:07:05.802+06:00  INFO 15012 --- [Portfolio] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-07-18T23:07:05.802+06:00  INFO 15012 --- [Portfolio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
 2026-07-18T23:07:05.806+06:00  INFO 15012 --- [Portfolio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2026-07-18T23:32:09.329+06:00  INFO 10232 --- [Portfolio] [restartedMain] c.goat.portfolio.PortfolioApplication    : Starting PortfolioApplication using Java 25.0.1 with PID 10232 (D:\Java Projects\ADV JAVAAAAA!!!!\Portfolio\target\classes started by HP in D:\Java Projects\ADV JAVAAAAA!!!!\Portfolio)
+2026-07-18T23:32:09.332+06:00  INFO 10232 --- [Portfolio] [restartedMain] c.goat.portfolio.PortfolioApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-07-18T23:32:09.389+06:00  INFO 10232 --- [Portfolio] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-18T23:32:09.389+06:00  INFO 10232 --- [Portfolio] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-18T23:32:10.375+06:00  INFO 10232 --- [Portfolio] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-18T23:32:10.400+06:00  INFO 10232 --- [Portfolio] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 JPA repository interfaces.
+2026-07-18T23:32:10.974+06:00  INFO 10232 --- [Portfolio] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 5050 (http)
+2026-07-18T23:32:10.991+06:00  INFO 10232 --- [Portfolio] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-18T23:32:10.991+06:00  INFO 10232 --- [Portfolio] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-18T23:32:11.039+06:00  INFO 10232 --- [Portfolio] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1649 ms
+2026-07-18T23:32:11.289+06:00  INFO 10232 --- [Portfolio] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-18T23:32:11.400+06:00  INFO 10232 --- [Portfolio] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-07-18T23:32:12.069+06:00  INFO 10232 --- [Portfolio] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-18T23:32:12.105+06:00  INFO 10232 --- [Portfolio] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-18T23:32:12.701+06:00  INFO 10232 --- [Portfolio] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@493ab723
+2026-07-18T23:32:12.703+06:00  INFO 10232 --- [Portfolio] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-18T23:32:12.862+06:00  INFO 10232 --- [Portfolio] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/portfolio_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: portfolio_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-18T23:32:13.373+06:00  INFO 10232 --- [Portfolio] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-18T23:32:13.575+06:00  INFO 10232 --- [Portfolio] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-18T23:32:13.660+06:00  WARN 10232 --- [Portfolio] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-18T23:32:13.688+06:00  INFO 10232 --- [Portfolio] [restartedMain] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-07-18T23:32:14.222+06:00  INFO 10232 --- [Portfolio] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 5050 (http) with context path '/'
+2026-07-18T23:32:14.234+06:00  INFO 10232 --- [Portfolio] [restartedMain] c.goat.portfolio.PortfolioApplication    : Started PortfolioApplication in 5.423 seconds (process running for 6.484)
+2026-07-18T23:32:23.085+06:00  INFO 10232 --- [Portfolio] [http-nio-5050-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-18T23:32:23.085+06:00  INFO 10232 --- [Portfolio] [http-nio-5050-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-18T23:32:23.085+06:00  INFO 10232 --- [Portfolio] [http-nio-5050-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-07-18T23:32:38.465+06:00  INFO 10232 --- [Portfolio] [http-nio-5050-exec-2] com.goat.portfolio.ContactController     : Form submitted from method
+2026-07-18T23:32:38.465+06:00  INFO 10232 --- [Portfolio] [http-nio-5050-exec-2] com.goat.portfolio.ContactController     : Contact{name='Tahsin Mahmud', email='tahsinmahmudsebha22@gmail.com', message='Hi there!'}
+2026-07-18T23:37:02.869+06:00  INFO 10232 --- [Portfolio] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-18T23:37:02.891+06:00  INFO 10232 --- [Portfolio] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-07-18T23:37:02.927+06:00  INFO 10232 --- [Portfolio] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-18T23:37:02.953+06:00  INFO 10232 --- [Portfolio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-07-18T23:37:02.979+06:00  INFO 10232 --- [Portfolio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-07-18T23:37:09.457+06:00  INFO 16532 --- [Portfolio] [restartedMain] c.goat.portfolio.PortfolioApplication    : Starting PortfolioApplication using Java 25.0.1 with PID 16532 (D:\Java Projects\ADV JAVAAAAA!!!!\Portfolio\target\classes started by HP in D:\Java Projects\ADV JAVAAAAA!!!!\Portfolio)
+2026-07-18T23:37:09.459+06:00  INFO 16532 --- [Portfolio] [restartedMain] c.goat.portfolio.PortfolioApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-07-18T23:37:09.505+06:00  INFO 16532 --- [Portfolio] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-18T23:37:09.505+06:00  INFO 16532 --- [Portfolio] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-18T23:37:10.181+06:00  INFO 16532 --- [Portfolio] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-18T23:37:10.202+06:00  INFO 16532 --- [Portfolio] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 JPA repository interfaces.
+2026-07-18T23:37:11.006+06:00  INFO 16532 --- [Portfolio] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 5050 (http)
+2026-07-18T23:37:11.018+06:00  INFO 16532 --- [Portfolio] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-18T23:37:11.018+06:00  INFO 16532 --- [Portfolio] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-18T23:37:11.056+06:00  INFO 16532 --- [Portfolio] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1551 ms
+2026-07-18T23:37:11.192+06:00  INFO 16532 --- [Portfolio] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-18T23:37:11.270+06:00  INFO 16532 --- [Portfolio] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-07-18T23:37:11.639+06:00  INFO 16532 --- [Portfolio] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-18T23:37:11.668+06:00  INFO 16532 --- [Portfolio] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-18T23:37:12.085+06:00  INFO 16532 --- [Portfolio] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c329a0
+2026-07-18T23:37:12.086+06:00  INFO 16532 --- [Portfolio] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-18T23:37:12.184+06:00  INFO 16532 --- [Portfolio] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/portfolio_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: portfolio_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-18T23:37:12.602+06:00  INFO 16532 --- [Portfolio] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-18T23:37:12.715+06:00  INFO 16532 --- [Portfolio] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-18T23:37:12.782+06:00  WARN 16532 --- [Portfolio] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-18T23:37:12.799+06:00  INFO 16532 --- [Portfolio] [restartedMain] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-07-18T23:37:13.085+06:00  INFO 16532 --- [Portfolio] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 5050 (http) with context path '/'
+2026-07-18T23:37:13.095+06:00  INFO 16532 --- [Portfolio] [restartedMain] c.goat.portfolio.PortfolioApplication    : Started PortfolioApplication in 4.075 seconds (process running for 4.976)
+2026-07-18T23:37:22.536+06:00  INFO 16532 --- [Portfolio] [http-nio-5050-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-18T23:37:22.536+06:00  INFO 16532 --- [Portfolio] [http-nio-5050-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-18T23:37:22.536+06:00  INFO 16532 --- [Portfolio] [http-nio-5050-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-07-18T23:39:58.002+06:00  INFO 16532 --- [Portfolio] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-07-18T23:39:58.035+06:00  INFO 16532 --- [Portfolio] [Thread-1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-18T23:39:58.068+06:00  INFO 16532 --- [Portfolio] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-07-18T23:39:58.091+06:00  INFO 16532 --- [Portfolio] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-18T23:39:58.104+06:00  INFO 16532 --- [Portfolio] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-07-18T23:39:58.132+06:00  INFO 16532 --- [Portfolio] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-07-18T23:39:58.487+06:00  INFO 16532 --- [Portfolio] [restartedMain] c.goat.portfolio.PortfolioApplication    : Starting PortfolioApplication using Java 25.0.1 with PID 16532 (D:\Java Projects\ADV JAVAAAAA!!!!\Portfolio\target\classes started by HP in D:\Java Projects\ADV JAVAAAAA!!!!\Portfolio)
+2026-07-18T23:39:58.487+06:00  INFO 16532 --- [Portfolio] [restartedMain] c.goat.portfolio.PortfolioApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-07-18T23:39:58.850+06:00  INFO 16532 --- [Portfolio] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-18T23:39:58.853+06:00  INFO 16532 --- [Portfolio] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2026-07-18T23:39:59.190+06:00  INFO 16532 --- [Portfolio] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 5050 (http)
+2026-07-18T23:39:59.197+06:00  INFO 16532 --- [Portfolio] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-18T23:39:59.198+06:00  INFO 16532 --- [Portfolio] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-18T23:39:59.252+06:00  INFO 16532 --- [Portfolio] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 759 ms
+2026-07-18T23:39:59.300+06:00  WARN 16532 --- [Portfolio] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: Failed to initialize dependency 'inMemoryDatabaseShutdownExecutor' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'inMemoryDatabaseShutdownExecutor' defined in class path resource [org/springframework/boot/devtools/autoconfigure/DevToolsDataSourceAutoConfiguration.class]: Unsatisfied dependency expressed through method 'inMemoryDatabaseShutdownExecutor' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2026-07-18T23:39:59.301+06:00  INFO 16532 --- [Portfolio] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-07-18T23:39:59.319+06:00  INFO 16532 --- [Portfolio] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-07-18T23:39:59.356+06:00 ERROR 16532 --- [Portfolio] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2026-07-18T23:40:50.852+06:00  INFO 16532 --- [Portfolio] [restartedMain] c.goat.portfolio.PortfolioApplication    : Starting PortfolioApplication using Java 25.0.1 with PID 16532 (D:\Java Projects\ADV JAVAAAAA!!!!\Portfolio\target\classes started by HP in D:\Java Projects\ADV JAVAAAAA!!!!\Portfolio)
+2026-07-18T23:40:50.869+06:00  INFO 16532 --- [Portfolio] [restartedMain] c.goat.portfolio.PortfolioApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-07-18T23:40:51.115+06:00  INFO 16532 --- [Portfolio] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-18T23:40:51.120+06:00  INFO 16532 --- [Portfolio] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2026-07-18T23:40:51.236+06:00  INFO 16532 --- [Portfolio] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 5050 (http)
+2026-07-18T23:40:51.236+06:00  INFO 16532 --- [Portfolio] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-18T23:40:51.236+06:00  INFO 16532 --- [Portfolio] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-18T23:40:51.268+06:00  INFO 16532 --- [Portfolio] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 385 ms
+2026-07-18T23:40:51.301+06:00  WARN 16532 --- [Portfolio] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: Failed to initialize dependency 'inMemoryDatabaseShutdownExecutor' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'inMemoryDatabaseShutdownExecutor' defined in class path resource [org/springframework/boot/devtools/autoconfigure/DevToolsDataSourceAutoConfiguration.class]: Unsatisfied dependency expressed through method 'inMemoryDatabaseShutdownExecutor' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2026-07-18T23:40:51.302+06:00  INFO 16532 --- [Portfolio] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-07-18T23:40:51.310+06:00  INFO 16532 --- [Portfolio] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-07-18T23:40:51.314+06:00 ERROR 16532 --- [Portfolio] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2026-07-18T23:40:54.876+06:00  INFO 16532 --- [Portfolio] [restartedMain] c.goat.portfolio.PortfolioApplication    : Starting PortfolioApplication using Java 25.0.1 with PID 16532 (D:\Java Projects\ADV JAVAAAAA!!!!\Portfolio\target\classes started by HP in D:\Java Projects\ADV JAVAAAAA!!!!\Portfolio)
+2026-07-18T23:40:54.876+06:00  INFO 16532 --- [Portfolio] [restartedMain] c.goat.portfolio.PortfolioApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-07-18T23:40:55.256+06:00  INFO 16532 --- [Portfolio] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-18T23:40:55.260+06:00  INFO 16532 --- [Portfolio] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2026-07-18T23:40:55.379+06:00  INFO 16532 --- [Portfolio] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 5050 (http)
+2026-07-18T23:40:55.380+06:00  INFO 16532 --- [Portfolio] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-18T23:40:55.381+06:00  INFO 16532 --- [Portfolio] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-18T23:40:55.413+06:00  INFO 16532 --- [Portfolio] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 528 ms
+2026-07-18T23:40:55.437+06:00  WARN 16532 --- [Portfolio] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: Failed to initialize dependency 'inMemoryDatabaseShutdownExecutor' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'inMemoryDatabaseShutdownExecutor' defined in class path resource [org/springframework/boot/devtools/autoconfigure/DevToolsDataSourceAutoConfiguration.class]: Unsatisfied dependency expressed through method 'inMemoryDatabaseShutdownExecutor' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2026-07-18T23:40:55.438+06:00  INFO 16532 --- [Portfolio] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-07-18T23:40:55.446+06:00  INFO 16532 --- [Portfolio] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-07-18T23:40:55.449+06:00 ERROR 16532 --- [Portfolio] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2026-07-18T23:45:50.421+06:00  INFO 16532 --- [Portfolio] [restartedMain] c.goat.portfolio.PortfolioApplication    : Starting PortfolioApplication using Java 25.0.1 with PID 16532 (D:\Java Projects\ADV JAVAAAAA!!!!\Portfolio\target\classes started by HP in D:\Java Projects\ADV JAVAAAAA!!!!\Portfolio)
+2026-07-18T23:45:50.430+06:00  INFO 16532 --- [Portfolio] [restartedMain] c.goat.portfolio.PortfolioApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-07-18T23:45:50.987+06:00  INFO 16532 --- [Portfolio] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-18T23:45:51.003+06:00  INFO 16532 --- [Portfolio] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2026-07-18T23:45:51.520+06:00  INFO 16532 --- [Portfolio] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 5050 (http)
+2026-07-18T23:45:51.520+06:00  INFO 16532 --- [Portfolio] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-18T23:45:51.520+06:00  INFO 16532 --- [Portfolio] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-18T23:45:51.577+06:00  INFO 16532 --- [Portfolio] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1107 ms
+2026-07-18T23:45:51.617+06:00  WARN 16532 --- [Portfolio] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: Failed to initialize dependency 'inMemoryDatabaseShutdownExecutor' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'inMemoryDatabaseShutdownExecutor' defined in class path resource [org/springframework/boot/devtools/autoconfigure/DevToolsDataSourceAutoConfiguration.class]: Unsatisfied dependency expressed through method 'inMemoryDatabaseShutdownExecutor' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2026-07-18T23:45:51.619+06:00  INFO 16532 --- [Portfolio] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-07-18T23:45:51.628+06:00  INFO 16532 --- [Portfolio] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-07-18T23:45:51.635+06:00 ERROR 16532 --- [Portfolio] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
