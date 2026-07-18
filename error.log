@@ -507,3 +507,160 @@ jakarta.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not 
 2026-07-18T22:40:52.641+06:00  INFO 15012 --- [Portfolio] [http-nio-5050-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
 2026-07-18T22:40:55.709+06:00  INFO 15012 --- [Portfolio] [http-nio-5050-exec-8] com.goat.portfolio.ContactController     : Form submitted from method
 2026-07-18T22:40:55.715+06:00  INFO 15012 --- [Portfolio] [http-nio-5050-exec-8] com.goat.portfolio.ContactController     : Contact{name='Tahsin Mahmud Sebha', email='tahsinmahmudsebha22@gmail.com', message='Hahaha'}
+2026-07-18T23:03:34.170+06:00  INFO 15012 --- [Portfolio] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2026-07-18T23:03:34.273+06:00  INFO 15012 --- [Portfolio] [Thread-5] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-18T23:03:34.322+06:00  INFO 15012 --- [Portfolio] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-07-18T23:03:34.389+06:00  INFO 15012 --- [Portfolio] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-18T23:03:34.443+06:00  INFO 15012 --- [Portfolio] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-07-18T23:03:34.454+06:00  INFO 15012 --- [Portfolio] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2026-07-18T23:03:35.299+06:00  INFO 15012 --- [Portfolio] [restartedMain] c.goat.portfolio.PortfolioApplication    : Starting PortfolioApplication using Java 25.0.1 with PID 15012 (D:\Java Projects\ADV JAVAAAAA!!!!\Portfolio\target\classes started by HP in D:\Java Projects\ADV JAVAAAAA!!!!\Portfolio)
+2026-07-18T23:03:35.300+06:00  INFO 15012 --- [Portfolio] [restartedMain] c.goat.portfolio.PortfolioApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-07-18T23:03:35.889+06:00  INFO 15012 --- [Portfolio] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-18T23:03:35.896+06:00  INFO 15012 --- [Portfolio] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2026-07-18T23:03:36.242+06:00  INFO 15012 --- [Portfolio] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 5050 (http)
+2026-07-18T23:03:36.253+06:00  INFO 15012 --- [Portfolio] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-18T23:03:36.256+06:00  INFO 15012 --- [Portfolio] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-18T23:03:36.358+06:00  INFO 15012 --- [Portfolio] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1037 ms
+2026-07-18T23:03:36.453+06:00  INFO 15012 --- [Portfolio] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-18T23:03:36.531+06:00  INFO 15012 --- [Portfolio] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-18T23:03:36.534+06:00  INFO 15012 --- [Portfolio] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-07-18T23:03:36.573+06:00  INFO 15012 --- [Portfolio] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@162ad51a
+2026-07-18T23:03:36.574+06:00  INFO 15012 --- [Portfolio] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-07-18T23:03:36.583+06:00  INFO 15012 --- [Portfolio] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/portfolio_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: portfolio_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-18T23:03:36.625+06:00  INFO 15012 --- [Portfolio] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-18T23:03:36.783+06:00  INFO 15012 --- [Portfolio] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-18T23:03:36.840+06:00  WARN 15012 --- [Portfolio] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-18T23:03:36.859+06:00  INFO 15012 --- [Portfolio] [restartedMain] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-07-18T23:03:37.108+06:00  INFO 15012 --- [Portfolio] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 5050 (http) with context path '/'
+2026-07-18T23:03:37.114+06:00  INFO 15012 --- [Portfolio] [restartedMain] c.goat.portfolio.PortfolioApplication    : Started PortfolioApplication in 2.009 seconds (process running for 1742.785)
+2026-07-18T23:03:37.115+06:00  INFO 15012 --- [Portfolio] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-18T23:06:16.918+06:00  INFO 15012 --- [Portfolio] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-07-18T23:06:17.015+06:00  INFO 15012 --- [Portfolio] [Thread-9] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-18T23:06:17.076+06:00  INFO 15012 --- [Portfolio] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-07-18T23:06:17.172+06:00  INFO 15012 --- [Portfolio] [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-18T23:06:17.243+06:00  INFO 15012 --- [Portfolio] [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2026-07-18T23:06:17.324+06:00  INFO 15012 --- [Portfolio] [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2026-07-18T23:06:18.239+06:00  INFO 15012 --- [Portfolio] [restartedMain] c.goat.portfolio.PortfolioApplication    : Starting PortfolioApplication using Java 25.0.1 with PID 15012 (D:\Java Projects\ADV JAVAAAAA!!!!\Portfolio\target\classes started by HP in D:\Java Projects\ADV JAVAAAAA!!!!\Portfolio)
+2026-07-18T23:06:18.239+06:00  INFO 15012 --- [Portfolio] [restartedMain] c.goat.portfolio.PortfolioApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-07-18T23:06:18.712+06:00  INFO 15012 --- [Portfolio] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-18T23:06:18.722+06:00  INFO 15012 --- [Portfolio] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2026-07-18T23:06:18.972+06:00  INFO 15012 --- [Portfolio] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 5050 (http)
+2026-07-18T23:06:18.972+06:00  INFO 15012 --- [Portfolio] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-18T23:06:18.977+06:00  INFO 15012 --- [Portfolio] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-18T23:06:19.039+06:00  INFO 15012 --- [Portfolio] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 786 ms
+2026-07-18T23:06:19.137+06:00  INFO 15012 --- [Portfolio] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-18T23:06:19.207+06:00  INFO 15012 --- [Portfolio] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-18T23:06:19.212+06:00  INFO 15012 --- [Portfolio] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2026-07-18T23:06:19.394+06:00  INFO 15012 --- [Portfolio] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7ca0169
+2026-07-18T23:06:19.396+06:00  INFO 15012 --- [Portfolio] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2026-07-18T23:06:19.401+06:00  INFO 15012 --- [Portfolio] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/portfolio_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: portfolio_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-18T23:06:19.444+06:00  INFO 15012 --- [Portfolio] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-18T23:06:19.531+06:00  INFO 15012 --- [Portfolio] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-18T23:06:19.576+06:00  WARN 15012 --- [Portfolio] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-18T23:06:19.591+06:00  INFO 15012 --- [Portfolio] [restartedMain] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-07-18T23:06:19.772+06:00  INFO 15012 --- [Portfolio] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 5050 (http) with context path '/'
+2026-07-18T23:06:19.781+06:00  INFO 15012 --- [Portfolio] [restartedMain] c.goat.portfolio.PortfolioApplication    : Started PortfolioApplication in 1.614 seconds (process running for 1905.453)
+2026-07-18T23:06:19.784+06:00  INFO 15012 --- [Portfolio] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-18T23:06:43.587+06:00  INFO 15012 --- [Portfolio] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2026-07-18T23:06:43.587+06:00  INFO 15012 --- [Portfolio] [Thread-13] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-18T23:06:43.602+06:00  INFO 15012 --- [Portfolio] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-07-18T23:06:43.603+06:00  INFO 15012 --- [Portfolio] [Thread-13] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-18T23:06:43.607+06:00  INFO 15012 --- [Portfolio] [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2026-07-18T23:06:43.611+06:00  INFO 15012 --- [Portfolio] [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2026-07-18T23:06:43.721+06:00  INFO 15012 --- [Portfolio] [restartedMain] c.goat.portfolio.PortfolioApplication    : Starting PortfolioApplication using Java 25.0.1 with PID 15012 (D:\Java Projects\ADV JAVAAAAA!!!!\Portfolio\target\classes started by HP in D:\Java Projects\ADV JAVAAAAA!!!!\Portfolio)
+2026-07-18T23:06:43.721+06:00  INFO 15012 --- [Portfolio] [restartedMain] c.goat.portfolio.PortfolioApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-07-18T23:06:43.909+06:00  INFO 15012 --- [Portfolio] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-18T23:06:43.909+06:00  INFO 15012 --- [Portfolio] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2026-07-18T23:06:43.987+06:00  INFO 15012 --- [Portfolio] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 5050 (http)
+2026-07-18T23:06:43.987+06:00  INFO 15012 --- [Portfolio] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-18T23:06:43.987+06:00  INFO 15012 --- [Portfolio] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-18T23:06:44.027+06:00  INFO 15012 --- [Portfolio] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 303 ms
+2026-07-18T23:06:44.101+06:00  INFO 15012 --- [Portfolio] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-18T23:06:44.146+06:00  INFO 15012 --- [Portfolio] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-18T23:06:44.147+06:00  INFO 15012 --- [Portfolio] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2026-07-18T23:06:44.169+06:00  INFO 15012 --- [Portfolio] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5de517b8
+2026-07-18T23:06:44.169+06:00  INFO 15012 --- [Portfolio] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2026-07-18T23:06:44.175+06:00  INFO 15012 --- [Portfolio] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/portfolio_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: portfolio_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-18T23:06:44.197+06:00  INFO 15012 --- [Portfolio] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-18T23:06:44.218+06:00  INFO 15012 --- [Portfolio] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-18T23:06:44.288+06:00  WARN 15012 --- [Portfolio] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-18T23:06:44.307+06:00  INFO 15012 --- [Portfolio] [restartedMain] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-07-18T23:06:44.433+06:00  INFO 15012 --- [Portfolio] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 5050 (http) with context path '/'
+2026-07-18T23:06:44.436+06:00  INFO 15012 --- [Portfolio] [restartedMain] c.goat.portfolio.PortfolioApplication    : Started PortfolioApplication in 0.749 seconds (process running for 1930.108)
+2026-07-18T23:06:44.437+06:00  INFO 15012 --- [Portfolio] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-18T23:06:46.904+06:00  INFO 15012 --- [Portfolio] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-07-18T23:06:46.906+06:00  INFO 15012 --- [Portfolio] [Thread-17] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-18T23:06:46.913+06:00  INFO 15012 --- [Portfolio] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-07-18T23:06:46.917+06:00  INFO 15012 --- [Portfolio] [Thread-17] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-18T23:06:46.917+06:00  INFO 15012 --- [Portfolio] [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2026-07-18T23:06:46.922+06:00  INFO 15012 --- [Portfolio] [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2026-07-18T23:06:47.016+06:00  INFO 15012 --- [Portfolio] [restartedMain] c.goat.portfolio.PortfolioApplication    : Starting PortfolioApplication using Java 25.0.1 with PID 15012 (D:\Java Projects\ADV JAVAAAAA!!!!\Portfolio\target\classes started by HP in D:\Java Projects\ADV JAVAAAAA!!!!\Portfolio)
+2026-07-18T23:06:47.017+06:00  INFO 15012 --- [Portfolio] [restartedMain] c.goat.portfolio.PortfolioApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-07-18T23:06:47.177+06:00  INFO 15012 --- [Portfolio] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-18T23:06:47.184+06:00  INFO 15012 --- [Portfolio] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2026-07-18T23:06:47.288+06:00  INFO 15012 --- [Portfolio] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 5050 (http)
+2026-07-18T23:06:47.288+06:00  INFO 15012 --- [Portfolio] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-18T23:06:47.288+06:00  INFO 15012 --- [Portfolio] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-18T23:06:47.327+06:00  INFO 15012 --- [Portfolio] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 309 ms
+2026-07-18T23:06:47.377+06:00  INFO 15012 --- [Portfolio] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-18T23:06:47.414+06:00  INFO 15012 --- [Portfolio] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-18T23:06:47.414+06:00  INFO 15012 --- [Portfolio] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2026-07-18T23:06:47.436+06:00  INFO 15012 --- [Portfolio] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@20244069
+2026-07-18T23:06:47.437+06:00  INFO 15012 --- [Portfolio] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2026-07-18T23:06:47.438+06:00  INFO 15012 --- [Portfolio] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/portfolio_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: portfolio_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-18T23:06:47.461+06:00  INFO 15012 --- [Portfolio] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-18T23:06:47.501+06:00  INFO 15012 --- [Portfolio] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-18T23:06:47.544+06:00  WARN 15012 --- [Portfolio] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-18T23:06:47.556+06:00  INFO 15012 --- [Portfolio] [restartedMain] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-07-18T23:06:47.668+06:00  INFO 15012 --- [Portfolio] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 5050 (http) with context path '/'
+2026-07-18T23:06:47.668+06:00  INFO 15012 --- [Portfolio] [restartedMain] c.goat.portfolio.PortfolioApplication    : Started PortfolioApplication in 0.675 seconds (process running for 1933.342)
+2026-07-18T23:06:47.668+06:00  INFO 15012 --- [Portfolio] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-18T23:07:05.795+06:00  INFO 15012 --- [Portfolio] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-18T23:07:05.801+06:00  INFO 15012 --- [Portfolio] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-07-18T23:07:05.802+06:00  INFO 15012 --- [Portfolio] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-18T23:07:05.802+06:00  INFO 15012 --- [Portfolio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2026-07-18T23:07:05.806+06:00  INFO 15012 --- [Portfolio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.

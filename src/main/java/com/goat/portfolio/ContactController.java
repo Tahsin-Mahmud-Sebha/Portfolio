@@ -2,6 +2,8 @@ package com.goat.portfolio;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.mail.SimpleMailMessage;
@@ -11,7 +13,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
-@Slf4j
+
 @Controller
 @RequiredArgsConstructor
 public class ContactController {
@@ -20,6 +22,7 @@ public class ContactController {
 
     private final JavaMailSender mailSender;
 
+    private static final Logger log = LoggerFactory.getLogger(ContactController.class);
 
 
     @GetMapping("/")
